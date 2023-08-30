@@ -3,10 +3,6 @@ name: CI
 
 on: [push, workflow_dispatch]
 
-- name: Authenticate with ngrok
-  run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
-  env:
-    NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
 
 jobs:
 
